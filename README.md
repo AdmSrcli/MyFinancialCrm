@@ -17,6 +17,8 @@
 🖼️![FrmGiderler](https://github.com/user-attachments/assets/edd4d2f1-5e2b-43c3-9024-80b4188f4761)
 🖼️ ![FrmBankaHareketleri](https://github.com/user-attachments/assets/18546204-0119-4fde-9445-a20166f93608)
 🖼️![FrmDashboard](https://github.com/user-attachments/assets/ba7a9507-4b51-41c4-8c57-73328098fb12)
+🖼️![FrmAyarlar](https://github.com/user-attachments/assets/14a270ca-4e58-4a15-90c3-7a579d849bf7)
+
 
 
 
