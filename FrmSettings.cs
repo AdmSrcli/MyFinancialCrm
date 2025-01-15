@@ -23,13 +23,7 @@ namespace MyFinancialCrm
             Application.Exit();
         }
 
-        private void rdkoyutema_CheckedChanged(object sender, EventArgs e)
-        {
-            FrmSettings fs=new FrmSettings();
-            fs.BackColor=Color.Black;
-            fs.ForeColor=Color.White;
-        }
-
+      
         private void button2_Click(object sender, EventArgs e)
         {
            
