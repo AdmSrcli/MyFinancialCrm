@@ -32,10 +32,7 @@ namespace MyFinancialCrm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            rdkoyutema.Checked = false;
-            rdaciktema.Checked = false;
-            rdingilizce.Checked = false;
-            rdturkce.Checked = false;
+           
             FrmCategories fr=new FrmCategories();
             fr.Show();
             this.Hide();
@@ -43,27 +40,31 @@ namespace MyFinancialCrm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (rdkoyutema.Checked )
+            if (txtmevcutsifre.Text != "" && txtusername.Text != "")
             {
-                FrmSettings fs = new FrmSettings();
-                fs.BackColor = Color.Black;
-                fs.ForeColor = Color.White;
+                var user = txtusername.Text;
+                var password = txtmevcutsifre.Text;
+                var bul = db.Users.SingleOrDefault(u => u.Username == user && u.Password == password); ;
+                if (bul != null)
+                {
+                    if (bul.Username == user && bul.Password == txtmevcutsifre.Text)
+                    {
+                        bul.Password = txtnewpassword.Text;
+                        db.SaveChanges();
+                        MessageBox.Show(" Parola Başarılı Şekilde  Güncellendi! ", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Hatalı Kullanıcı Yada Parola Girdiniz. \n\n Lütfen Kontrol Edip Tekrar Deneyiniz.", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Hatalı Kullanıcı Yada Parola Girdiniz. \n\n Lütfen Kontrol Edip Tekrar Deneyiniz.", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            if (rdaciktema.Checked )
-            {
-                FrmSettings fs = new FrmSettings();
-                fs.BackColor = Color.White;
-                fs.ForeColor = Color.Black;
-            }
-            if(rdturkce.Checked )
-            {
-                InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new System.Globalization.CultureInfo("tr-TR"));
-            }
-            if (rdingilizce.Checked)
-            {
-                InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new System.Globalization.CultureInfo("df-DF"));
-            }
-            Application.Exit();
+           
+
         }
     }
 }
