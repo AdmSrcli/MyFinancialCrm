@@ -2,7 +2,7 @@
 🎈 Proje Kisinin 3 farklı bankaya ait  banka hesap hareketleri, ödemesi gelen faturalar, gelen eft-havale ve yapılan harcamalar gibi işlem detaylarına sahip, finansal bir programdır.
 🎈 Ayrıca kullanıcıya güzel bir Dashboard da sunmaktadır.
 
-💻 Program 8 Farklı formdan oluşan ve Login sayfasıyla kullanıcı karşılayan bir başlangıcı var. Kullanılan teknolojiler aşağıdaki gibidir.
+💻 Program 7 Farklı formdan oluşan ve Login sayfasıyla kullanıcı karşılayan bir başlangıcı var. Kullanılan teknolojiler aşağıdaki gibidir.
 💻 Yazılım Dili: C#
 💻 WindowsForm (.Net Framework 4.8 teknolojisi)
 💻 Entitiy Framework Sihizbazı, (Db First Yöntemi)
