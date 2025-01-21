@@ -18,6 +18,8 @@
 🖼️ ![FrmBankaHareketleri](https://github.com/user-attachments/assets/18546204-0119-4fde-9445-a20166f93608)
 🖼️![FrmDashboard](https://github.com/user-attachments/assets/ba7a9507-4b51-41c4-8c57-73328098fb12)
 🖼️![FrmAyarlar](https://github.com/user-attachments/assets/14a270ca-4e58-4a15-90c3-7a579d849bf7)
+🖼️![C# Sertifika](https://github.com/user-attachments/assets/df351fc4-f66c-491f-938c-45a73bddda08)
+
 
 
 
